@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-type": "ts-node -P tsconfig-node.json ./scripts/generateTypes.ts"
   },
   "dependencies": {
+    "@yfnote/create-message-formatter": "^1.0.6",
+    "@yfnote/generate-types": "^1.0.6",
     "gray-matter": "^4.0.3",
     "next": "14.1.4",
     "react": "^18",
@@ -25,6 +28,7 @@
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
